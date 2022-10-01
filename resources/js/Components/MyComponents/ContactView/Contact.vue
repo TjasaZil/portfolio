@@ -12,63 +12,78 @@
           <li>Email: tjasa.zilavec@gmail.com</li>
         </ul>
       </div>
-      <form
-        class="flex flex-col space-y-6 mt-8"
-        method="POST"
-        @submit.prevent="submit"
-        v-if="!this.success"
+      <div
+        v-if="$page.props.flash.contacted"
+        class="text-center w-full border border-solid py-14 border-lime-900 bg-emerald-300 text-lime-900 mx-auto mt-8 rounded-lg"
       >
-        <p
-          v-if="this.error"
-          class="text-center w-full border border-solid py-4 border-red-700 bg-red-300 text-red-700 mx-auto rounded-lg"
-        >
-          You failed to send a message.
-        </p>
+        <p>Thank you for your message!</p>
+        <p>I will get back to you soon.</p>
+      </div>
 
-        <input
-          placeholder="Your name"
-          class="input"
-          name="name"
-          v-model="form.name"
-        />
-        <input
-          placeholder="Your email"
-          class="input"
-          name="email"
-          v-model="form.email"
-        />
-        <input
-          placeholder="Subject"
-          class="input"
-          name="subject"
-          v-model="form.subject"
-        />
-        <textarea
-          placeholder="Your Message"
-          rows="6"
-          class="focus:outline-none bg-neutral-600 text-neutral-200 placeholder:text-neutral-400 border-neutral-700 border-2 rounded-lg"
-          name="message"
-          v-model="form.message"
-        />
-        <input type="submit" value="Submit" />
-      </form>
-      <p
+      <div v-else>
+        <form
+          class="flex flex-col space-y-6 mt-8"
+          method="POST"
+          @submit.prevent="submit"
+        >
+          <input
+            placeholder="Your name"
+            class="input"
+            name="name"
+            v-model="form.name"
+          />
+          <InputError :message="form.errors.name" />
+          <input
+            placeholder="Your email"
+            class="input"
+            name="email"
+            v-model="form.email"
+          />
+          <InputError :message="form.errors.email" />
+          <input
+            placeholder="Subject"
+            class="input"
+            name="subject"
+            v-model="form.subject"
+          />
+          <InputError :message="form.errors.subject" />
+          <textarea
+            placeholder="Your Message"
+            rows="6"
+            class="focus:outline-none bg-neutral-600 text-neutral-200 placeholder:text-neutral-400 border-neutral-700 border-2 rounded-lg"
+            name="message"
+            v-model="form.message"
+          />
+          <InputError :message="form.errors.message" />
+          <button :disabled="form.processing">
+            <span class="animate-spin mr-1" v-show="form.processing"
+              >&#9696;</span
+            >
+            <span v-show="!form.processing">Send</span>
+          </button>
+        </form>
+      </div>
+
+      <!--<p
         v-else
         class="text-center w-full border border-solid py-14 border-lime-900 bg-emerald-300 text-lime-900 mx-auto mt-8 rounded-lg"
       >
         Success!
-      </p>
+      </p>-->
     </div>
   </section>
 </template>
 
 <script>
+import InputError from "../../GeneratedComponents/InputError.vue";
+
 export default {
   name: "Contact",
+  components: { InputError },
   data() {
     return {
-      error: false,
-      success: false,
+      //error: false,
+      //success: false,
       form: this.$inertia.form({
         name: "",
         email: "",
@@ -77,11 +92,11 @@ export default {
       }),
     };
   },
-
   methods: {
     submit() {
       this.form.post(route("contact"));
     },
   },
+  components: { InputError },
 };
 </script>
