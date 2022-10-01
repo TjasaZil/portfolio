@@ -4,6 +4,9 @@
 
 @layer {
   .input {
-    @apply focus:outline-none bg-neutral-600 text-neutral-200 placeholder:text-neutral-400  border-neutral-700 border-2 rounded-lg h-10 placeholder:pl-5;
+    @apply focus:outline-none bg-neutral-600 text-neutral-200 placeholder:text-neutral-400  border-neutral-700 border-2 rounded-lg h-10 placeholder:pl-5 md:h-12;
+  }
+  .button-hover {
+    @apply hover:transition-all hover:duration-100 hover:ease-in-out  hover:animate-pulse;
   }
 }

@@ -1,6 +1,6 @@
 <template>
   <Head title="Welcome" />
-  <section><Contact /></section>
+  <section class="bg-neutral-800"><Contact /></section>
 </template>
 
 <script>

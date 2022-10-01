@@ -1,12 +1,17 @@
 <template>
   <section>
     <div
-      class="w-10/12 bg-neutral-700 text-neutral-200 flex flex-col justify-center mx-auto h-auto p-10 max-w-3xl rounded-lg"
+      class="w-10/12 bg-neutral-700 text-neutral-200 flex flex-col justify-center mx-auto h-auto p-10 max-w-5xl rounded-lg lg:flex-row lg:space-x-11"
     >
-      <div class="flex flex-col">
-        <h2>Let's make magic happen!</h2>
-        <p>Contact me!</p>
-        <ul>
+      <div class="flex flex-col lg:justify-top lg:j-center">
+        <h2 class="font-bold text-xl md:text-3xl xl:text-5xl">
+          Let's make
+          <span class="text-pink-500 uppercase">magic</span> happen!
+        </h2>
+        <p class="font-light text-lg sm:text-xl md:text-2xl mt-3">
+          Contact me!
+        </p>
+        <ul class="mt-8 md:text-xl">
           <li>Location: Slovenia</li>
           <li class="text-emerald-200">Available to work</li>
           <li>Email: tjasa.zilavec@gmail.com</li>
@@ -22,7 +27,7 @@
 
       <div v-else>
         <form
-          class="flex flex-col space-y-6 mt-8"
+          class="flex flex-col space-y-6 mt-8 lg:mt-0 lg:w-[500px]"
           method="POST"
           @submit.prevent="submit"
         >
@@ -55,21 +60,17 @@
             v-model="form.message"
           />
           <InputError :message="form.errors.message" />
-          <button :disabled="form.processing">
+          <button
+            :disabled="form.processing"
+            class="bg-neutral-800 text-neutral-300 rounded-lg py-2 lg:py-3 lg:text-lg button-hover opacity-80 hover:opacity-100"
+          >
             <span class="animate-spin mr-1" v-show="form.processing"
-              >&#9696;</span
+              >&#9696; Processing...</span
             >
             <span v-show="!form.processing">Send</span>
           </button>
         </form>
       </div>
-
-      <!--<p
-        v-else
-        class="text-center w-full border border-solid py-14 border-lime-900 bg-emerald-300 text-lime-900 mx-auto mt-8 rounded-lg"
-      >
-        Success!
-      </p>-->
     </div>
   </section>
 </template>
@@ -82,13 +83,13 @@ export default {
   components: { InputError },
   data() {
     return {
-      //error: false,
-      //success: false,
       form: this.$inertia.form({
         name: "",
         email: "",
         subject: "",
         message: "",
+        color: "text-black",
+        interval: null,
       }),
     };
   },
@@ -100,3 +101,4 @@ export default {
   components: { InputError },
 };
 </script>
+<style scoped></style>
