@@ -82,7 +82,7 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Global "From" Address
+    | Global "from" Address
     |--------------------------------------------------------------------------
     |
     | You may wish for all e-mails sent by your application to be sent from
@@ -94,6 +94,19 @@ return [
     'from' => [
         'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
         'name' => env('MAIL_FROM_NAME', 'Example'),
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Global "to" Address
+    |--------------------------------------------------------------------------
+    |
+    |
+    */
+
+    'to' => [
+        'address' => env('MAIL_TO_ADDRESS', 'hello@example.com'),
+        'name' => env('MAIL_TO_NAME', 'Example'),
     ],
 
     /*
