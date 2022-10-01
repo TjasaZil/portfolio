@@ -1,8 +1,10 @@
 <?php
 
+use App\Mail\ContactedMessage;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use App\http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -33,3 +35,10 @@ Route::middleware([
         return Inertia::render('Dashboard');
     })->name('dashboard');
 });
+
+
+Route::post("contact", [ContactController::class, "contact"])
+->name("contact");
+//Route::get("/test", function(){
+  //  return new ContactedMessage("name", "mail@mail.com", "subject", "this is a message");
+//});

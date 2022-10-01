@@ -1,8 +1,6 @@
 <template>
   <Head title="Welcome" />
-  <section>
-    <Contact />
-  </section>
+  <section><Contact /></section>
 </template>
 
 <script>

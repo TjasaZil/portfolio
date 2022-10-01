@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer {
+  .input {
+    @apply focus:outline-none bg-neutral-600 text-neutral-200 placeholder:text-neutral-400  border-neutral-700 border-2 rounded-lg h-10 placeholder:pl-5;
+  }
+}
