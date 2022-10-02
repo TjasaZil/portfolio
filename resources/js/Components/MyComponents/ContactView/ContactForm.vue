@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="pt-32">
     <div
       class="w-10/12 bg-neutral-700 text-neutral-200 flex flex-col justify-center mx-auto h-auto p-10 max-w-5xl rounded-lg lg:flex-row lg:space-x-11"
     >
@@ -79,7 +79,7 @@
 import InputError from "../../GeneratedComponents/InputError.vue";
 
 export default {
-  name: "Contact",
+  name: "ContactForm",
   components: { InputError },
   data() {
     return {

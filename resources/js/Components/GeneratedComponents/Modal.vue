@@ -1,6 +1,6 @@
 <script>
 import { computed, onMounted, onUnmounted, watch } from "vue";
-import Contact from "../MyComponents/ContactView/Contact.vue";
+import Contact from "../../Pages/Contact.vue";
 
 const props = defineProps({
   show: {
