@@ -21,7 +21,7 @@ class ContactController extends Controller
         Mail::to(config("mail.to.address"), config("mail.to.name"))
         ->send(new ContactedMessage($request->name, $request->email, $request->subject, $request->message));
 
-        return redirect("/")
+        return redirect("/contact")
         ->with("contacted", true);
    }
 }

@@ -1,7 +1,7 @@
 <template>
   <section class="mt-32">
     <h1
-      class="font-bold tracking-tighter text-2xl sm:text-3xl md:text-4xl lg:text-5xl"
+      class="font-bold tracking-tighter text-xl sm:text-3xl md:text-4xl lg:text-5xl 3xl:text-6xl 4xl:text-7xl"
     >
       Hello, I am
       <span :class="[colorClasses]">{{ action }}</span>
@@ -52,12 +52,12 @@ export default {
 
 <style scoped>
 .tjaša {
-  color: #1a73e8;
+  color: #ec4899;
 }
 .frontendenthusiast {
-  color: #348853;
+  color: #f59e0b;
 }
 .vuedeveloper {
-  color: #f9ab00;
+  color: #10b981;
 }
 </style>
