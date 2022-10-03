@@ -9,12 +9,23 @@
     <h2 class="text-md sm:text-lg md:text-xl lg:text-2xl font-light">
       Welcome to my page.
     </h2>
+    <div
+      class="flex items-center absolute top-64 sm:top-72 md:top-80 lg:top-96 mt-16"
+    >
+      <h2 class="text-md sm:text-lg md:text-xl lg:text-2xl font-light">
+        Let's connect:
+      </h2>
+      <SocialMedia />
+    </div>
   </section>
 </template>
 
 <script>
+import SocialMedia from "./SocialMedia.vue";
+
 export default {
   name: "Headline",
+  components: { SocialMedia },
   data() {
     return {
       action: "Tjaša",

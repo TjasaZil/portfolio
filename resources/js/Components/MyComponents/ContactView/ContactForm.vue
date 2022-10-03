@@ -1,9 +1,9 @@
 <template>
   <section class="pt-32">
     <div
-      class="w-10/12 bg-neutral-700 text-neutral-200 flex flex-col justify-center mx-auto h-auto p-10 max-w-5xl rounded-lg lg:flex-row lg:space-x-11"
+      class="z-50 relative w-10/12 bg-neutral-700 text-neutral-200 flex flex-col justify-center mx-auto h-auto p-10 max-w-5xl rounded-lg md:flex-row md:space-x-11"
     >
-      <div class="flex flex-col lg:justify-top lg:j-center">
+      <div class="flex flex-col md:justify-top md:justify-center">
         <h2 class="font-bold text-xl md:text-3xl xl:text-5xl">
           Let's make
           <span class="text-pink-500 uppercase">magic</span> happen!
@@ -27,7 +27,7 @@
 
       <div v-else>
         <form
-          class="flex flex-col space-y-6 mt-8 lg:mt-0 lg:w-[500px]"
+          class="flex flex-col space-y-6 mt-8 lg:mt-0 md:w-[350px] lg:w-[500px]"
           method="POST"
           @submit.prevent="submit"
         >
