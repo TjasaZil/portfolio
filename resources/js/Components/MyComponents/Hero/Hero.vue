@@ -17,6 +17,7 @@
 import Headline from "./Headline.vue";
 import Image from "./Image.vue";
 import BgImage from "../SharedComponents/BgImage.vue";
+
 export default {
   name: "Hero",
   components: { Headline, Image, BgImage },
