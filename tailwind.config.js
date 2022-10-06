@@ -15,6 +15,15 @@ module.exports = {
       fontFamily: {
         sans: ["Nunito", ...defaultTheme.fontFamily.sans],
       },
+      keyframes: {
+        inout: {
+          "0%, 100%": { opacity: 0 },
+          "50%": { opacity: 1 },
+        },
+      },
+      animation: {
+        inout: "inout 1s infinite",
+      },
     },
   },
 

@@ -10,3 +10,19 @@
     @apply hover:transition-all hover:duration-100 hover:ease-in-out  hover:animate-pulse;
   }
 }
+@layer utilities {
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  .fadeInOut {
+    animation: fadeInOut 1.5s;
+  }
+}
