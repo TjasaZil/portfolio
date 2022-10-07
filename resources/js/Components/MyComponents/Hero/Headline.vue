@@ -17,6 +17,12 @@
       </h2>
       <SocialMedia />
     </div>
+    <div
+      class="bg-neutral-600 rounded-lg flex flex-col items-center absolute top-72 sm:top-80 md:top-96 lg:top-[450px] mt-16"
+    >
+      <h2>About me:</h2>
+      <p>This is my about section</p>
+    </div>
   </section>
 </template>
 

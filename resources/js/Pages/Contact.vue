@@ -1,8 +1,8 @@
 <template>
-  <section class="bg-neutral-800 h-full">
+  <section class="bg-neutral-800 h-screen">
     <NavBar />
     <BgImage />
-    <ContactForm />
+    <ContactForm class="pt-56" />
   </section>
 </template>
 
