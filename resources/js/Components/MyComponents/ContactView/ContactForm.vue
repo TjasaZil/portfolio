@@ -1,7 +1,7 @@
 <template>
   <section class="pt-32">
     <div
-      class="z-50 relative w-10/12 bg-neutral-700 text-neutral-200 flex flex-col justify-center mx-auto h-auto p-10 max-w-5xl rounded-lg md:flex-row md:space-x-11"
+      class="z-30 relative w-10/12 bg-neutral-700 text-neutral-200 flex flex-col justify-center mx-auto h-auto p-10 max-w-5xl rounded-lg md:flex-row md:space-x-11"
     >
       <div class="flex flex-col md:justify-top md:justify-center">
         <h2 class="font-bold text-xl md:text-3xl xl:text-5xl">

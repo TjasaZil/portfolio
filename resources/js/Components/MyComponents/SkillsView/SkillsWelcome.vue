@@ -2,9 +2,11 @@
   <section
     class="flex flex-col mt-32 rounded-lg bg-neutral-900 w-1/2 mx-auto h-auto p-6"
   >
-    <div class="flex flex-row space-x-10 justify-between items-center">
+    <div
+      class="flex flex-col mx-auto text-center sm:mx-0 sm:flex-row space-x-10 sm:justify-between sm:items-center"
+    >
       <h2 class="text-xl lg:text-3xl font-bold">Skills</h2>
-      <NextButton />
+      <NextButton href="/skills" class="mt-5 sm:mt-0" />
     </div>
     <div class="flex flex-col space-y-16 mx-auto">
       <div class="flex flex-col mt-16">
@@ -79,7 +81,7 @@ export default {
 
 <style scoped>
 img {
-  @apply w-8 lg:w-10 xl:w-16 mt-4 hover:cursor-pointer;
+  @apply w-8 lg:w-10 xl:w-16 mt-4 ml-3 hover:cursor-pointer;
 }
 h3 {
   @apply xl:text-xl italic;

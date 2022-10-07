@@ -1,6 +1,6 @@
 <template>
   <section>
-    <Link href="/skills">
+    <Link :href="href">
       <div
         class="w-8 h-8 xl:w-12 xl:h-12 border-2 border-solid rounded-full border-neutral-200 hover:cursor-pointer"
       >
@@ -15,6 +15,12 @@ import { Link } from "@inertiajs/inertia-vue3";
 export default {
   name: "NextButton",
   components: { Link },
+  props: {
+    href: {
+      type: String,
+      required: true,
+    },
+  },
 };
 </script>
 
