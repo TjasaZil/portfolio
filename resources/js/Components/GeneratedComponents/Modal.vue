@@ -102,7 +102,7 @@ export default {
             class="mb-6 bg-white rounded-lg overflow-hidden shadow-xl transform transition-all sm:w-full sm:mx-auto"
             :class="maxWidthClass"
           >
-            <slot v-if="show"><Contact /></slot>
+            <slot v-if="show"><contact /></slot>
           </div>
         </transition>
       </div>
