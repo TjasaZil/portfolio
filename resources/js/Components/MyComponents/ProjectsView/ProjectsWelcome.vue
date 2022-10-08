@@ -6,9 +6,9 @@
         <NextButton href="/projects" />
       </div>
       <div class="flex flex-wrap w-full justify-evenly mx-auto lg:space-x-3">
-        <Container class="mt-8 w-full sm:w-1/4" />
-        <Container class="mt-8 w-full sm:w-1/4" />
-        <Container class="mt-8 w-full sm:w-1/4" />
+        <Container class="container" />
+        <Container class="container" />
+        <Container class="container" />
       </div>
     </section>
   </section>
@@ -23,4 +23,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+.container {
+  @apply mt-8 w-full sm:w-1/4;
+}
+</style>
