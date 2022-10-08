@@ -31,7 +31,7 @@ export default {
 
 <style scoped>
 button {
-  @apply border-solid border-2 px-2 py-1 rounded-full hover:cursor-pointer;
+  @apply border-solid border-2 px-2 py-1 xl:px-3 xl:py-2   rounded-full hover:cursor-pointer;
 }
 .primary {
   @apply bg-neutral-900 hover:bg-transparent  border-neutral-900 hover:border-neutral-200;
