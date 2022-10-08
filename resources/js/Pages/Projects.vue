@@ -4,9 +4,9 @@
 
     <AboutProjects />
     <div class="flex flex-wrap w-full justify-evenly mx-auto lg:space-x-3">
-      <Container class="container" />
-      <Container class="container bg-neutral-800" />
-      <Container class="container bg-neutral-800" />
+      <Container heading="Pomoč Pointerjem Website" class="container" />
+      <Container heading="heading" class="container bg-neutral-800" />
+      <Container heading="heading" class="container bg-neutral-800" />
     </div>
     <BgImage />
     <Footer />

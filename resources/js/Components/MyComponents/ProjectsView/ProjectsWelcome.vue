@@ -6,9 +6,9 @@
         <NextButton href="/projects" />
       </div>
       <div class="flex flex-wrap w-full justify-evenly mx-auto lg:space-x-3">
-        <Container class="container" />
-        <Container class="container" />
-        <Container class="container" />
+        <Container heading="Pomoč Pointerjem Website" class="container" />
+        <Container heading="heading" class="container" />
+        <Container heading="heading" class="container" />
       </div>
     </section>
   </section>
