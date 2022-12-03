@@ -1,7 +1,7 @@
 <template>
   <section class="w-full mt-16 bg-neutral-900 h-auto p-16">
     <div class="flex justify-between w-11/12 mx-auto max-w-7xl">
-      <p>Copyright 2022</p>
+      <p class="text-neutral-200">Copyright 2022</p>
       <SocialMedia />
     </div>
   </section>

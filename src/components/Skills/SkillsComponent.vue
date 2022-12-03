@@ -8,7 +8,11 @@
     <div
       class="flex flex-col mx-auto text-center sm:mx-0 sm:flex-row space-x-10 sm:justify-between sm:items-center mt-16"
     >
-      <h2 class="text-xl lg:text-3xl text-center mx-auto font-bold">Skills</h2>
+      <h2
+        class="text-xl lg:text-3xl text-center mx-auto font-bold text-neutral-200"
+      >
+        Skills
+      </h2>
     </div>
     <div class="flex flex-col space-y-16 mx-auto">
       <div class="flex flex-col mt-16">
@@ -19,7 +23,9 @@
             class="flex flex-col justify-center items-center space-y-4 ml-5"
           >
             <img :src="skill.img" :alt="skill.alt" />
-            <p>{{ skill.text }}</p>
+            <p class="text-neutral-300 capitalize opacity-80">
+              {{ skill.text }}
+            </p>
           </div>
         </div>
       </div>

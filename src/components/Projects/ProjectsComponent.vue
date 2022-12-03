@@ -1,15 +1,17 @@
 <template>
-  <section class="w-full mx-auto flex flex-col mt-32 p-12">
+  <section class="w-full mx-auto flex flex-col mt-16 p-12">
     <section class="w-full mx-auto max-w-7xl">
       <div
         class="flex flex-row justify-between items-center mx-auto text-center lg:text-left"
       >
-        <h2 class="text-xl lg:text-3xl font-bold text-center mx-auto">
+        <h2
+          class="text-xl lg:text-3xl font-bold text-center mx-auto text-neutral-200"
+        >
           Projects
         </h2>
       </div>
       <div
-        class="flex flex-col xl:flex-row xl::flex-wrap w-full justify-center xl:justify-between mx-auto xl:space-x-3 mt-16"
+        class="flex flex-col xl:flex-row xl::flex-wrap w-full justify-center xl:justify-between mx-auto xl:space-x-3 mt-8"
       >
         <ContainerComponent
           heading="Pomoč Pointerjem Website"

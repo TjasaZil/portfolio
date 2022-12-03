@@ -1,14 +1,14 @@
 <template>
   <section class="mt-32">
     <h1
-      class="font-bold tracking-tighter text-xl sm:text-3xl md:text-4xl lg:text-5xl 3xl:text-6xl 4xl:text-7xl"
+      class="font-bold tracking-tighter text-xl sm:text-3xl md:text-4xl lg:text-5xl 3xl:text-6xl 4xl:text-7xl text-neutral-200"
     >
       Hello, I am
       <span :class="[colorClasses]">{{ action }}</span>
     </h1>
-    <h2>Welcome to my page.</h2>
+    <h2 class="text-neutral-200">Welcome to my page.</h2>
     <div
-      class="flex items-center absolute top-52 sm:top-72 md:top-80 lg:top-96 mt-16"
+      class="flex items-center absolute top-52 sm:top-72 md:top-80 lg:top-96 mt-16 text-neutral-200"
     >
       <h2>Let's connect:</h2>
       <SocialMedia />
@@ -16,20 +16,20 @@
     <div
       class="bg-neutral-600 mx-auto w-1/2 lg:w-1/3 rounded-lg flex flex-col items-center absolute top-60 sm:top-80 md:top-96 lg:top-[450px] mt-16"
     >
-      <h2 class="pt-3">About me:</h2>
-      <p class="p-3">
+      <h2 class="pt-3 text-neutral-200">About me:</h2>
+      <p class="p-3 text-neutral-300">
         I am a software developer, specializing in the web development arena. I
         have been developing websites using Vue.js, TailwindCss, and Jest for
         the last year.
       </p>
-      <p class="p-3">
+      <p class="p-3 text-neutral-300">
         I'm currently working on getting my skill to a higher level, by offering
         my services to people and non-profit organizations that need a website.
         All my projects are made using the TDD workflow to ensure a seamless
         user experience. I mostly enjoy working on converting Figma files to
         fully responsive website layouts.
       </p>
-      <p class="p-3">
+      <p class="p-3 text-neutral-300">
         Drop me a line if you want to talk about web development, coding, or
         anything else. I am currently available for employment and eager to hear
         from GitHub users.

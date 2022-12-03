@@ -14,8 +14,10 @@
             {{ heading }}
           </h5>
         </a>
-        <p>{{ technologies }}</p>
-        <p class="mb-3 font-normal text-neutral-700 dark:text-neutral-400">
+        <p class="text-neutral-600 opacity-80 dark:text-neutral-300">
+          {{ technologies }}
+        </p>
+        <p class="mb-3 font-normal text-neutral-700 dark:text-neutral-300">
           {{ paragraph }}
         </p>
         <a
@@ -45,10 +47,8 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 
-//import ButtonComponent from "../Shared/ButtonComponent.vue";
 export default defineComponent({
   name: "ContainerComponent",
-  //components: { ButtonComponent },
   props: {
     heading: {
       type: String,
