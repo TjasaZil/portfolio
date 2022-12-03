@@ -5,15 +5,6 @@
     >
       <Headline /><Image />
     </div>
-    <!-- <div class="grid grid-cols-12">
-      <div class="col-start-1 col-span-1"></div>
-      <div class="col-start-2 col-span-5 flex flex-row justify-between">
-        <Headline />
-      </div>
-      <div class="col-start-7 col-span-5"><Image /></div>
-
-      <div class="col-start-12 col-span-1"></div>
-    </div>-->
   </section>
 </template>
 
