@@ -15,17 +15,31 @@
         <a href="#skills"><li>Skills</li></a>
         <a href="#projects"><li>Projects</li></a>
         <a href="#contact"><li>Contact</li></a>
+        <a href="#contact"><li></li></a>
+        <a href="#contact"><li></li></a>
       </ul>
+      <ThemeToggle />
     </div>
   </section>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import ThemeToggle from "./ThemeToggle.vue";
 
 export default defineComponent({
   name: "NavbarComponent",
+  components: { ThemeToggle },
 });
+if (
+  localStorage.getItem("color-theme") === "dark" ||
+  (!("color-theme" in localStorage) &&
+    window.matchMedia("(prefers-color-scheme: dark)").matches)
+) {
+  document.documentElement.classList.add("dark");
+} else {
+  document.documentElement.classList.remove("dark");
+}
 </script>
 
 <style scoped>
