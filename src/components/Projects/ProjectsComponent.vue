@@ -16,19 +16,25 @@
         <ContainerComponent
           heading="Pomoč Pointerjem Website"
           technologies="Vue.js, JS, Firebase, Tailwindcss"
-          paragraph="text"
+          paragraph="This website was made for a nonprofit organization that helps with the adoption of hunting dogs from Spain. I used Sendgrid and Firebase to send contact messages from the site. "
+          :github="'https://github.com/zuzexx/PomocPointerjemWebsite'"
+          :live="'https://pomoc-pointerjem.si/'"
           :image="Pointerji"
         />
         <ContainerComponent
           heading="The Pasta Pot"
           technologies="Vue.js, JS, Jest, Tailwindcss"
-          paragraph="text"
+          paragraph="This project was made in order for me to practice TDD. I used Jest to unit test the project and later used Cypress to write component tests. The site is made with the Vue3 framework and styled with Tailwindcss."
+          :github="'https://github.com/zuzexx/ThePastaPot'"
+          :live="'https://pastapot.vercel.app/'"
           :image="Pasta"
         />
         <ContainerComponent
           heading="Frontend Mentor Challenges"
           technologies="Vue.js, JS, Jest, Tailwindcss"
-          paragraph="text"
+          paragraph="This is a website that holds all of my Frontend Mentor Challenges. While solving the challenges I followed the TDD approach. Challenges are tested with Jest/Vue testing library and solved using the Vue framework."
+          :github="'https://github.com/zuzexx/FrontendMentor'"
+          :live="'https://frontendmentor-steel.vercel.app/'"
           :image="Mentor"
         />
       </div>
