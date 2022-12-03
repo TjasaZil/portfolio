@@ -1,7 +1,8 @@
 <template>
-  <section class="bg-neutral-800 overflow-x-hidden">
+  <section class="bg-neutral-900 overflow-x-hidden">
     <NavbarComponent />
     <HeroComponent />
+
     <SkillsComponent id="skills" />
     <ProjectsComponent id="projects" />
     <FooterComponent />

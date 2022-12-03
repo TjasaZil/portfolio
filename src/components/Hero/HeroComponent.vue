@@ -1,5 +1,5 @@
 <template>
-  <section class="w-full h-screen bg-natural-800 mx-auto">
+  <section class="w-full h-screen bg-natural-900 mx-auto">
     <div
       class="w-11/12 lg:w-4/6 max-w-7xl flex flex-row lg:justify-between items-center mx-auto"
     >
