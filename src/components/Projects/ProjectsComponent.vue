@@ -4,10 +4,12 @@
       <div
         class="flex flex-row justify-between items-center mx-auto text-center lg:text-left"
       >
-        <h2 class="text-xl lg:text-3xl font-bold">Projects</h2>
+        <h2 class="text-xl lg:text-3xl font-bold text-center mx-auto">
+          Projects
+        </h2>
       </div>
       <div
-        class="flex flex-row flex-wrap w-full justify-between mx-auto lg:space-x-3 mt-16"
+        class="flex flex-col xl:flex-row xl::flex-wrap w-full justify-center xl:justify-between mx-auto xl:space-x-3 mt-16"
       >
         <ContainerComponent
           heading="Pomoč Pointerjem Website"
