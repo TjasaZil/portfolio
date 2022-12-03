@@ -2,6 +2,7 @@
   <section class="bg-neutral-800 overflow-x-hidden">
     <NavbarComponent />
     <HeroComponent />
+    <SkillsComponent />
     <ProjectsComponent />
     <FooterComponent />
   </section>
@@ -13,6 +14,7 @@ import HeroComponent from "@/components/Hero/HeroComponent.vue";
 import FooterComponent from "./components/Shared/FooterComponent.vue";
 import NavbarComponent from "./components/Shared/NavbarComponent.vue";
 import ProjectsComponent from "./components/Projects/ProjectsComponent.vue";
+import SkillsComponent from "./components/Skills/SkillsComponent.vue";
 
 export default defineComponent({
   name: "App",
@@ -21,6 +23,7 @@ export default defineComponent({
     FooterComponent,
     NavbarComponent,
     ProjectsComponent,
+    SkillsComponent,
   },
 });
 </script>
