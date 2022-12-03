@@ -9,33 +9,39 @@
       <div class="p-5">
         <a :href="live" target="_blank">
           <h5
-            class="mb-2 text-2xl font-bold tracking-tight text-neutral-900 dark:text-neutral-300"
+            class="mb-2 text-2xl xl:text-3xl font-bold tracking-tight text-neutral-900 dark:text-neutral-300"
           >
             {{ heading }}
           </h5>
         </a>
-        <p class="text-neutral-600 opacity-80 dark:text-neutral-300">
+        <p
+          class="text-neutral-600 opacity-80 dark:text-neutral-300 text-sm xl:text-md"
+        >
           {{ technologies }}
         </p>
-        <p class="mb-5 mt-5 font-normal text-neutral-700 dark:text-neutral-300">
+        <p
+          class="mb-5 mt-5 font-normal text-neutral-700 dark:text-neutral-300 text-sm lg:text-md xl:text-lg"
+        >
           {{ paragraph }}
         </p>
-        <div class="flex flex-row justify-around items-center">
+        <div
+          class="flex flex-col justify-center mobilem:flex-row mobilem:justify-around items-center w-full space-y-4 mobilem:space-y-0"
+        >
           <a
             :href="github"
             target="_blank"
-            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-neutral-900 rounded-lg hover:bg-neutral-800 focus:ring-4 focus:outline-none focus:ring-neutral-300 dark:bg-neutral-600 dark:hover:bg-neutral-700 dark:focus:ring-neutral-800"
+            class="inline-flex items-center px-3 py-2 text-sm lg:text-md xl:text-xl font-medium text-center text-white bg-neutral-900 rounded-lg hover:bg-neutral-800 focus:ring-4 focus:outline-none focus:ring-neutral-300 dark:bg-neutral-600 dark:hover:bg-neutral-700 dark:focus:ring-neutral-800"
           >
             GitHub
             <img
               src="@/assets/Images/github.png"
               alt="github logo"
-              class="w-6 ml-3"
+              class="w-5 ml-3"
             /> </a
           ><a
             :href="live"
             target="_blank"
-            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-emerald-700 rounded-lg hover:bg-emerald-800 focus:ring-4 focus:outline-none focus:ring-emerald-300 dark:bg-emerald-600 dark:hover:bg-emerald-700 dark:focus:ring-emerald-800"
+            class="inline-flex items-center px-3 py-2 text-sm lg:text-md xl:text-xl font-medium text-center text-white bg-emerald-700 rounded-lg hover:bg-emerald-800 focus:ring-4 focus:outline-none focus:ring-emerald-300 dark:bg-emerald-600 dark:hover:bg-emerald-700 dark:focus:ring-emerald-800"
           >
             Live Site
             <svg

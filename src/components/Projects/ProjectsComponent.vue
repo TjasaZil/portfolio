@@ -1,5 +1,5 @@
 <template>
-  <section class="w-full mx-auto flex flex-col mt-16 p-12">
+  <section class="projects-background w-full mx-auto flex flex-col mt-16 p-20">
     <section class="w-full mx-auto max-w-7xl">
       <div
         class="flex flex-row justify-between items-center mx-auto text-center lg:text-left"
@@ -30,7 +30,7 @@
           :image="Pasta"
         />
         <ContainerComponent
-          heading="Frontend Mentor Challenges"
+          heading="Frontend Mentor"
           technologies="Vue.js, JS, Jest, Tailwindcss"
           paragraph="This is a website that holds all of my Frontend Mentor Challenges. While solving the challenges I followed the TDD approach. Challenges are tested with Jest/Vue testing library and solved using the Vue framework."
           :github="'https://github.com/zuzexx/FrontendMentor'"
@@ -64,5 +64,11 @@ export default defineComponent({
 <style scoped>
 .container {
   @apply mt-8 w-full sm:w-1/4;
+}
+.projects-background {
+  background-image: url("@/assets/Images/bg-2.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 </style>

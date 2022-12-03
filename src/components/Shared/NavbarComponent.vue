@@ -1,6 +1,6 @@
 <template>
   <section
-    class="bg-neutral-900 h-16 lg:h-20 w-full absolute top-0 left-0 text-neutral-200"
+    class="bg-transparent h-16 lg:h-20 w-full absolute top-0 left-0 text-neutral-200"
   >
     <div class="flex h-full justify-between w-11/12 m-auto max-w-7xl">
       <ul class="flex justify-end items-center my-auto w-full h-full">

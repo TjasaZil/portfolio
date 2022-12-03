@@ -15,15 +15,17 @@
       </h2>
     </div>
     <div class="flex flex-col space-y-16 mx-auto">
-      <div class="flex flex-col mt-16">
-        <div class="flex flex-row flex-wrap">
+      <div class="flex flex-col mt-16 mx-auto">
+        <div class="flex flex-row flex-wrap mx-auto">
           <div
             v-for="skill in skills"
             :key="skill"
-            class="flex flex-col justify-center items-center space-y-4 ml-5"
+            class="flex flex-col justify-between items-center space-y-4 mb-6 mx-auto p-3"
           >
             <img :src="skill.img" :alt="skill.alt" />
-            <p class="text-neutral-300 capitalize opacity-80">
+            <p
+              class="text-neutral-300 capitalize opacity-80 text-sm lg:text-xl"
+            >
               {{ skill.text }}
             </p>
           </div>
@@ -86,8 +88,18 @@ export default defineComponent({
           text: "1+ year experience",
         },
         {
+          img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg",
+          alt: "npm logo",
+          text: "1+ year experience",
+        },
+        {
           img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
           alt: "vscode logo",
+          text: "1+ year experience",
+        },
+        {
+          img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
+          alt: "figma logo",
           text: "1+ year experience",
         },
       ],
@@ -98,7 +110,7 @@ export default defineComponent({
 
 <style scoped>
 img {
-  @apply w-16 mt-4 ml-3 hover:cursor-pointer;
+  @apply w-10 md:w-16 lg:w-24 mt-4 ml-3 hover:cursor-pointer;
 }
 h3 {
   @apply xl:text-xl italic;
