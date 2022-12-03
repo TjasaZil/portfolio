@@ -18,9 +18,21 @@
     >
       <h2 class="pt-3">About me:</h2>
       <p class="p-3">
-        A passionate web developer with 1 year of experience with building
-        websites. I am serious about responsive web design and testiung
-        everything to ensure the best user experience.
+        I am a software developer, specializing in the web development arena. I
+        have been developing websites using Vue.js, TailwindCss, and Jest for
+        the last year.
+      </p>
+      <p class="p-3">
+        I'm currently working on getting my skill to a higher level, by offering
+        my services to people and non-profit organizations that need a website.
+        All my projects are made using the TDD workflow to ensure a seamless
+        user experience. I mostly enjoy working on converting Figma files to
+        fully responsive website layouts.
+      </p>
+      <p class="p-3">
+        Drop me a line if you want to talk about web development, coding, or
+        anything else. I am currently available for employment and eager to hear
+        from GitHub users.
       </p>
     </div>
   </section>

@@ -14,6 +14,7 @@ import Image from "./ImageComponent.vue";
 
 export default {
   name: "Hero",
+
   components: { Headline, Image },
 };
 </script>
