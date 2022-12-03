@@ -3,8 +3,8 @@
     <div
       class="mx-auto max-w-sm bg-white border border-neutral-200 rounded-lg shadow-md dark:bg-neutral-800 dark:border-neutral-700 flex flex-col mt-16"
     >
-      <a :href="live" target="_blank">
-        <img class="rounded-t-lg" :src="image" alt="image" />
+      <a :href="live" target="_blank" class="img-container">
+        <img class="rounded-t-lg img" :src="image" alt="image" />
       </a>
       <div class="p-5">
         <a :href="live" target="_blank">
@@ -98,4 +98,21 @@ export default defineComponent({
 });
 </script>
 
-<style></style>
+<style scoped>
+.img {
+  @apply w-full scale-100 hover:scale-105 transition-all;
+}
+.img-container {
+  @apply hover:scale-100 w-full p-0 m-0 overflow-hidden;
+}
+.img-container .img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.7s ease-in-out;
+  transition: 0.7s ease-in-out;
+}
+.img-container:hover .img {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+</style>

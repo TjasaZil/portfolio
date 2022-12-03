@@ -14,8 +14,8 @@
         ></a>
         <a href="#skills"><li>Skills</li></a>
         <a href="#projects"><li>Projects</li></a>
-        <a href="#contact"><li>Contact</li></a>
-        <li><ThemeToggle /></li>
+        <!-- <a href="#contact"><li>Contact</li></a>
+        <li><ThemeToggle /></li>-->
       </ul>
     </div>
   </section>
@@ -23,11 +23,11 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import ThemeToggle from "./ThemeToggle.vue";
+//import ThemeToggle from "./ThemeToggle.vue";
 
 export default defineComponent({
   name: "NavbarComponent",
-  components: { ThemeToggle },
+  //components: { ThemeToggle },
 });
 if (
   localStorage.getItem("color-theme") === "dark" ||
