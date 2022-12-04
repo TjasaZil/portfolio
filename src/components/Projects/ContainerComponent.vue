@@ -1,7 +1,7 @@
 <template>
   <section>
     <div
-      class="mx-auto max-w-sm border border-neutral-200 rounded-lg shadow-md bg-neutral-800 dark:border-neutral-700 flex flex-col mt-16"
+      class="mx-auto max-w-sm border rounded-lg shadow-md bg-neutral-800 border-neutral-700 flex flex-col mt-16"
     >
       <a :href="live" target="_blank" class="img-container">
         <img class="rounded-t-lg img" :src="image" alt="image" />
@@ -9,18 +9,16 @@
       <div class="p-5">
         <a :href="live" target="_blank">
           <h5
-            class="mb-2 text-2xl xl:text-3xl font-bold tracking-tight text-neutral-900 dark:text-neutral-300"
+            class="mb-2 text-2xl xl:text-3xl font-bold tracking-tight text-neutral-300"
           >
             {{ heading }}
           </h5>
         </a>
-        <p
-          class="text-neutral-600 opacity-80 dark:text-neutral-300 text-sm xl:text-md"
-        >
+        <p class="opacity-80 text-neutral-400 text-sm xl:text-md">
           {{ technologies }}
         </p>
         <p
-          class="mb-5 mt-5 font-normal text-neutral-700 dark:text-neutral-300 text-sm lg:text-md xl:text-lg"
+          class="mb-5 mt-5 font-normal text-neutral-300 text-sm lg:text-md xl:text-lg"
         >
           {{ paragraph }}
         </p>
