@@ -1,7 +1,7 @@
 <template>
   <section>
     <div
-      class="mx-auto max-w-sm bg-white border border-neutral-200 rounded-lg shadow-md dark:bg-neutral-800 dark:border-neutral-700 flex flex-col mt-16"
+      class="mx-auto max-w-sm border border-neutral-200 rounded-lg shadow-md bg-neutral-800 dark:border-neutral-700 flex flex-col mt-16"
     >
       <a :href="live" target="_blank" class="img-container">
         <img class="rounded-t-lg img" :src="image" alt="image" />
